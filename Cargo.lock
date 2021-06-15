@@ -274,6 +274,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "block-buffer"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4152116fd6e9dadb291ae18fc1ec3575ed6d84c29642d97890f4b4a3417297e4"
+dependencies = [
+ "generic-array 0.14.4",
+]
+
+[[package]]
 name = "block-cipher-trait"
 version = "0.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -388,6 +397,15 @@ name = "constant_time_eq"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "245097e9a4535ee1e3e3931fcfcd55a796a44c643e8596ff6566d68f09b87bbc"
+
+[[package]]
+name = "cpufeatures"
+version = "0.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ed00c67cb5d0a7d64a44f6ad2668db7e7530311dd53ea79bcd4fb022c64911c8"
+dependencies = [
+ "libc",
+]
 
 [[package]]
 name = "crc"
@@ -954,7 +972,7 @@ dependencies = [
  "digest 0.8.1",
  "hmac-drbg",
  "rand 0.7.3",
- "sha2",
+ "sha2 0.8.2",
  "subtle 2.4.0",
  "typenum",
 ]
@@ -1065,6 +1083,12 @@ name = "opaque-debug"
 version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2839e79665f131bdb5782e51f2c6c9599c133c6098982a54c794358bf432529c"
+
+[[package]]
+name = "opaque-debug"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "624a8340c38c1b80fd549087862da4ba43e08858af025b236e509b6649fc13d5"
 
 [[package]]
 name = "pairing"
@@ -1441,6 +1465,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "sha2"
+version = "0.9.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b362ae5752fd2137731f9fa25fd4d9058af34666ca1966fb969119cc35719f12"
+dependencies = [
+ "block-buffer 0.9.0",
+ "cfg-if 1.0.0",
+ "cpufeatures",
+ "digest 0.9.0",
+ "opaque-debug 0.3.0",
+]
+
+[[package]]
 name = "slab"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1675,7 +1712,7 @@ dependencies = [
  "ripemd160 0.8.0",
  "serde",
  "serde_json",
- "sha2",
+ "sha2 0.9.5",
  "tiny-keccak 1.5.0",
  "wagyu-model",
 ]
@@ -1697,7 +1734,7 @@ dependencies = [
  "rlp",
  "serde",
  "serde_json",
- "sha2",
+ "sha2 0.9.5",
  "tiny-keccak 1.5.0",
  "wagyu-model",
 ]
@@ -1721,7 +1758,7 @@ dependencies = [
  "ripemd160 0.8.0",
  "rlp",
  "serde_json",
- "sha2",
+ "sha2 0.9.5",
  "uint",
 ]
 
@@ -1771,7 +1808,7 @@ dependencies = [
  "rust-crypto",
  "serde",
  "serde_json",
- "sha2",
+ "sha2 0.9.5",
  "wagyu-model",
  "wagyu-zcash-parameters",
  "zcash_primitives",
@@ -1881,7 +1918,7 @@ dependencies = [
  "pairing",
  "rand 0.7.3",
  "rand_core 0.5.1",
- "sha2",
+ "sha2 0.8.2",
 ]
 
 [[package]]

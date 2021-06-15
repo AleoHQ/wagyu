@@ -33,7 +33,7 @@ rand_xorshift = { version = "0.2" }
 ripemd160 = { version = "0.8", default-features = false }
 serde = { version = "1.0", default-features = false, features = ["alloc", "derive"] }
 serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
-sha2 = { version = "0.8", default-features = false }
+sha2 = { version = "0.9", default-features = false }
 tiny-keccak = { version = "1.4" }
 
 [features]
