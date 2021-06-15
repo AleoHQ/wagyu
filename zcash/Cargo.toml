@@ -44,7 +44,7 @@ libsecp256k1 = { version = "0.3.5", default-features = false, features = ["hmac"
 rand = { version = "0.7" }
 rand_core = { version = "0.5.1" }
 rust-crypto = { version = "0.2" }
-ripemd160 = { version = "0.7" }
+ripemd160 = { version = "0.9" }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = { version = "1.0" }
 sha2 = { version = "0.8" }
