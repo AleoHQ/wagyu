@@ -25,7 +25,7 @@ bitvec = { version = "0.17.4" }
 digest = { version = "0.9.0" }
 failure = { version = "0.1.8", default-features = false }
 hex = { version = "0.4.2", default-features = false }
-hmac = { version = "0.7.0" }
+hmac = { version = "0.11.0" }
 libsecp256k1 = { version = "0.3.5", default-features = false, features = ["hmac"] }
 pbkdf2 = { version = "0.3.0", features=["parallel"], default-features = false }
 rand = { version = "0.7", default-features = false }
