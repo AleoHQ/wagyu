@@ -26,7 +26,7 @@ transaction = []
 wagyu-model = { path = "../model", version = "0.6.3" }
 
 base58-monero = { version = "0.2.0" }
-crc = { version = "1.8.1" }
+crc = { version = "2.0.0" }
 curve25519-dalek = { version = "2.1.0" }
 failure = { version = "0.1.8" }
 hex = { version = "0.4.2" }
