@@ -54,7 +54,7 @@ rand_core = { version = "0.5.1" }
 safemem = { version = "0.3.3" }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = { version = "1.0" }
-tiny-keccak = { version = "1.4" }
+tiny-keccak = { version = "2.0" }
 
 [profile.release]
 opt-level = 3

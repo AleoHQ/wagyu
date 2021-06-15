@@ -34,7 +34,7 @@ ripemd160 = { version = "0.8", default-features = false }
 serde = { version = "1.0", default-features = false, features = ["alloc", "derive"] }
 serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
 sha2 = { version = "0.8", default-features = false }
-tiny-keccak = { version = "1.4" }
+tiny-keccak = { version = "2.0" }
 
 [features]
 default = ["std"]
