@@ -624,7 +624,7 @@ dependencies = [
  "fixed-hash",
  "impl-rlp",
  "primitive-types",
- "uint",
+ "uint 0.8.5",
 ]
 
 [[package]]
@@ -1121,7 +1121,7 @@ checksum = "7dd39dcacf71411ba488570da7bbc89b717225e46478b30ba99b92db6b149809"
 dependencies = [
  "fixed-hash",
  "impl-rlp",
- "uint",
+ "uint 0.8.5",
 ]
 
 [[package]]
@@ -1602,6 +1602,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "uint"
+version = "0.9.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6470ab50f482bde894a037a57064480a246dbfdd5960bd65a44824693f08da5f"
+dependencies = [
+ "byteorder",
+ "crunchy",
+ "hex 0.4.3",
+ "static_assertions",
+]
+
+[[package]]
 name = "unicode-width"
 version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1722,7 +1734,7 @@ dependencies = [
  "rlp",
  "serde_json",
  "sha2",
- "uint",
+ "uint 0.9.1",
 ]
 
 [[package]]
